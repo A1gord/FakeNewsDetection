@@ -8,13 +8,12 @@
 
 :TriplesMap a rr:TriplesMap;
 rml:logicalSource [
-    rml:source "News_Category_Dataset_v2.json";
-    rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.news[*]"
+    rml:source "news.csv";
+    rml:referenceFormulation ql:CSV
   ].
 
 :TriplesMap rr:subjectMap [
-    rr:template "http://example.com/{link}";
+    rr:template "http://example.com/{id}";
     rr:class schema:NewsArticle 
   ].
 
@@ -50,5 +49,12 @@ rml:logicalSource [
     rr:predicate schema:dateCreated;
     rr:objectMap [
       rml:reference "date" 
+    ]
+  ].
+
+:TriplesMap rr:predicateObjectMap [
+    rr:predicate schema:archivedAt;
+    rr:objectMap [
+      rml:reference "link"
     ]
   ].
