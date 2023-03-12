@@ -8,7 +8,7 @@
 
 :TriplesMap a rr:TriplesMap;
 rml:logicalSource [
-    rml:source "news.csv";
+    rml:source "FakeNewsNet.csv";
     rml:referenceFormulation ql:CSV
   ].
 
@@ -20,14 +20,14 @@ rml:logicalSource [
 :TriplesMap rr:predicateObjectMap [
     rr:predicate schema:genre;
     rr:objectMap [
-      rml:reference "category" 
+      rml:reference "category"
     ]
   ].
 
 :TriplesMap rr:predicateObjectMap [
     rr:predicate schema:headline;
     rr:objectMap [
-      rml:reference "headline" 
+      rml:reference "title"
     ]
   ].
 
@@ -55,6 +55,6 @@ rml:logicalSource [
 :TriplesMap rr:predicateObjectMap [
     rr:predicate schema:archivedAt;
     rr:objectMap [
-      rml:reference "link"
+      rml:reference "news_url"
     ]
   ].

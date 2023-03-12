@@ -2,4 +2,4 @@ In this directory you can see the [script](https://github.com/A1gord/GraduationP
 
 RDF is used as a knowledge graph storage.
 
-I used [News Category Dataset](https://www.kaggle.com/datasets/rmisra/news-category-dataset) and [RMLMapper](https://github.com/RMLio/rmlmapper-java).
+I used [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet), [News Category Dataset](https://www.kaggle.com/datasets/rmisra/news-category-dataset) and [RMLMapper](https://github.com/RMLio/rmlmapper-java).
