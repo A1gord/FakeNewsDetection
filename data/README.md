@@ -1,4 +1,4 @@
-In this directory you can see the [script](https://github.com/A1gord/GraduationProject/blob/master/data/generate_rdf.py) that generates RDF file from json dataset and [rules](https://github.com/A1gord/GraduationProject/blob/master/data/rules.rml.ttl) for it.
+In this directory you can see the [script](https://github.com/A1gord/GraduationProject/blob/master/data/generate_rdf.py) that generates RDF file from dataset and [rules](https://github.com/A1gord/GraduationProject/blob/master/data/rules.rml.ttl) for it.
 
 RDF is used as a knowledge graph storage.
 
